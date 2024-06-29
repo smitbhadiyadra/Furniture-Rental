@@ -21,7 +21,7 @@
 }
 
 ::selection{
-    background-color: #016450;
+    background-color: #F1A24A;
     color: #FFFFFF;
 }
 
@@ -71,7 +71,7 @@ nav .logo i{
 
 nav .logo span{
     font-size: 1.2vw;
-    background-color: #016450;
+    background-color: #F1A24A;
     padding: .8vh .5vw;
     border-radius: 5px;
     color: #fff;
@@ -80,11 +80,11 @@ nav .logo span{
 
 nav .logo:hover span{
     background-color: #E0EBED;
-    color: #016450;
+    color: #F1A24A;
 }
 
 nav .logo:hover i{
-    color: #016450;
+    color: #F1A24A;
 }
 
 nav .menu{
@@ -141,19 +141,6 @@ nav .right{
     gap: 1vw;
 }
 
-nav .right #btn1{
-    width: 40px;
-    height: 40px;
-    border-radius: 50px;
-    background-image: url("imgs/profileImg2.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    border: 2px solid #016450;
-    cursor: pointer;
-    background-color: transparent;
-    transition: all cubic-bezier(0.19, 1, 0.22, 1).7s;
-}
 
 .right #logout{
     cursor: pointer;
@@ -169,8 +156,8 @@ nav .right #btn1{
 }
 
 .right #logout:hover{
-    background: #016450;
-    box-shadow: 0px 0px 0px 7px rgba(19, 170, 52, 0.2);
+    background: #F1A24A;
+    box-shadow: 0px 0px 0px 7px #F1A24A;
     color: #fff;
 }
 
@@ -190,7 +177,7 @@ nav .right #btn1{
     height: 78%;
     background-color: #E0EBED;
     border-radius: 25px;
-    background-image: url(imgs/h1.png);
+    background-image: url('https://i.pinimg.com/564x/55/65/cb/5565cb0d0b0ecac55aaee7d4e5ec42af.jpg');
     background-size: 680px;
     background-repeat: no-repeat;
     background-position: 36vw -37vh;  
@@ -241,30 +228,6 @@ nav .right #btn1{
     justify-content: center;
     
 
-    input {
-        border: 2px solid transparent;
-        width: 15em;
-        height: 2.5em;
-        padding-left: 0.8em;
-        outline: none;
-        overflow: hidden;
-        background-color: #F3F3F3;
-        border-radius: 50px;
-        transition: all 0.5s;
-        border: 2px solid #016450;
-        font-family: Sofia;
-        font-weight: 600;
-        font-size: 1vw;
-        text-transform: capitalize;
-    }
-
-    input:hover,
-    input:focus {
-        border: 2px solid #016450;
-        box-shadow: 0px 0px 0px 7px rgba(19, 170, 52, 0.2);
-        background-color: white;
-    }
-
     input::placeholder{
         text-transform: capitalize;
     }
@@ -312,7 +275,7 @@ nav .right #btn1{
             display: flex;
             align-items: center;
             justify-content: center;
-            border: 2px solid #016450;
+            border: 2px solid #F1A24A;
             cursor: pointer;
             box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.021);
             transition: 1s ease;
@@ -325,8 +288,8 @@ nav .right #btn1{
             transition: all 0.3s;
           }
           .filter:hover {
-            box-shadow: 0px 0px 0px 7px rgba(19, 170, 52, 0.2);
-            background-color: #016450;
+            box-shadow: 0px 0px 0px 7px #F1A24A;
+            background-color: #F1A24A;
           }
           .filter:hover i {
             color: white;
@@ -334,13 +297,13 @@ nav .right #btn1{
           
     }
 
-    #filter-buttons{
+    .filter-buttons{
         display: flex;
         flex-wrap: wrap;
         gap: 15px;
     }
 
-    #filter-buttons button{
+    .filter-buttons button{
         cursor: pointer;
         padding: 1.5vh 1.2vw;
         border-radius: 33px;
@@ -354,17 +317,16 @@ nav .right #btn1{
         box-shadow: 0px 0px 10px 2px #d3d3d3;
     }
 
-    #filter-buttons button:hover{
-        background: #016450;
-        box-shadow: 0px 0px 0px 7px rgba(19, 170, 52, 0.2);
+    .filter-buttons button:hover{
+        background: #F1A24A;
+        box-shadow: 0px 0px 0px 7px #F1A24A;
         color: #fff;
     }
 
-    #filter-buttons button.active{
-        background: #016450;
+    .filter-buttons button.active{
+        background: #F1A24A;
         color: #fff;
     }
-
 
 
 }
@@ -509,75 +471,9 @@ nav .right #btn1{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 12vw;
+    padding: 0 10vw;
     position: relative;
-    margin-top: 30vh;
-
-
-    .card {
-        width: 40%;
-        height: 50%;
-        background: #FFFFFF;
-        padding: 2rem 1.5rem;
-        transition: box-shadow .3s ease, transform .2s ease;
-        border: none;
-        box-shadow: none;
-        position: relative;
-        overflow: hidden;
-        cursor: pointer;
-        
-        .box{
-            position: absolute;
-            width: 100%;
-            height: 6%;
-            background-color:#016450;
-            left: 0;
-            bottom: -10%;
-            transition: .5s ease;
-        }
-
-       }
-
-       .card-info {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        transition: transform .2s ease, opacity .2s ease;
-       }
-       
-       img{
-        margin-bottom: 1.2rem;
-        margin-top: 1.8rem;
-        width: 30%;
-        transition: transform .5s ease;
-       }
-    
-       .card-title {
-        color: #333;
-        font-size: 1.2em;
-        font-weight: 600;
-        text-align: center;
-        line-height: 1.5rem;
-       }
-       
-       .card:hover {
-        box-shadow: 0 10px 10px #23232333;
-        z-index: 99;
-       }
-
-       .card:hover img{
-        transform: scale(1.2);
-       }
-       
-       .card:hover .box{
-        bottom: 0;
-       }
-       
-       .card:hover .card-info {
-        transform: translateY(-5%);
-       }
-       
+    margin-top: 30vh;       
 
 }
 
@@ -590,7 +486,7 @@ nav .right #btn1{
     font-family: Sofia;
     font-size: .9vw;
     font-weight: 600;
-    color: #016450;
+    color: #F1A24A;
     transition: 1s ease;
 }
 
@@ -631,7 +527,7 @@ nav .right #btn1{
 }
 
 .page4 .left{
-    width: 40%;
+    width: 50%;
     height: 100%;
     /* background-color: pink; */
     display: flex;
@@ -646,7 +542,7 @@ nav .right #btn1{
 }
 
 .page4 .right{
-    width: 40%;
+    width: 50%;
     height: 100%;
     /* background-color: red; */
     display: flex;
@@ -660,7 +556,7 @@ nav .right #btn1{
     font-family: BaseB;
     font-weight: 600;
     font-size: 1vw;
-    color: #016450;
+    color: #F1A24A;
     margin-bottom: 2vh;
     transition: 1s ease;
 }
@@ -688,7 +584,7 @@ nav .right #btn1{
 .page4 .right button{
     padding: 1.5vh 2vw;
     font-size: 1vw;
-    background: #016450;
+    background: #F1A24A;
     border-radius: 5px;
     border: 2px solid transparent;
     outline: none;
@@ -714,7 +610,7 @@ nav .right #btn1{
 
 .page4 .right button:hover{
     border: 2px solid #FFFFFF;
-    box-shadow: 0px 0px 0px 7px rgba(19, 170, 52, 0.2);
+    box-shadow: 0px 0px 0px 7px #F1A24A;
 }
 
 
@@ -770,7 +666,7 @@ nav .right #btn1{
     font-family: BaseB;
     font-weight: 600;
     font-size: 1vw;
-    color: #016450;
+    color: #F1A24A;
     margin-bottom: 2vh;
     transition: 1s ease;
 }
@@ -798,7 +694,7 @@ nav .right #btn1{
 .page5 .left button{
     padding: 1.5vh 2vw;
     font-size: 1vw;
-    background: #016450;
+    background: #F1A24A;
     border-radius: 5px;
     border: 2px solid transparent;
     outline: none;
@@ -824,7 +720,7 @@ nav .right #btn1{
 
 .page5 .left button:hover{
     border: 2px solid #FFFFFF;
-    box-shadow: 0px 0px 0px 7px rgba(19, 170, 52, 0.2);
+    box-shadow: 0px 0px 0px 7px #F1A24A;
 }
 
 
@@ -894,6 +790,14 @@ nav .right #btn1{
        
     }
 
+    .active{
+        display: block;
+    }
+
+    .hide{
+        display: none;
+    }
+
     .down{
         width: 100%;
         height: 60%;
@@ -903,6 +807,7 @@ nav .right #btn1{
         justify-content: center;
         align-items: center;
         padding: 0 7vw;
+
 
            
             .swiper {
@@ -936,18 +841,17 @@ nav .right #btn1{
                     padding: 1em;
                     background: #FFFFFF;
                     position: relative;
-                    border-radius: .5rem;
-                    box-shadow: 1px 1px 10px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+                    border-radius: 0rem;
                     transition: 1s ease;
                     opacity: 1;
                 }
             
                 .card-img {
                     cursor: pointer;
-                    background-color: #84caa6;
+                    /* background-color: #84caa6; */
                     height: 60%;
                     width: 100%;
-                    border-radius: .4rem;
+                    border-radius: 0rem;
                     transition: .3s ease;
                     overflow: hidden;
                 }
@@ -971,29 +875,25 @@ nav .right #btn1{
                     padding-top: 10px;
                     border-top: 1px solid #ddd;
                 }
-            
+
                 .text-title {
                     font-weight: 900;
-                    font-size: 1.2vw;
-                    line-height: 1.2;
-                    margin-top: 1.2vh;
-                }
-            
-                .text-title i{
                     font-size: 1em;
+                    line-height: 1.3;
+                    color: #2B2726;
+                    /* margin-left: .5vw; */
                 }
             
                .text-body {
-                   font-size: 1vw;
-                   padding-bottom: 10px;
+                   font-size: .9em;
+                   padding: 10px 0;
                    color: #5b5e6392;
                    font-weight: 600;
-                    padding-left: .4vw;
-                    margin-top: 1vh;
+                    /* padding-left: .4vw; */
                }
+        
                
                .card-button {
-                    border: 1px solid #252525;
                     display: flex;
                     padding: .3em;
                     cursor: pointer;
@@ -1005,11 +905,7 @@ nav .right #btn1{
                 .card-img:hover {
                     transform: scale(.97);
                 }
-               
-                .card-button.hide, .card-button:hover {
-                   border: 1px solid #ffcaa6;
-                   background-color: #ffcaa6;
-                }
+            
 
 
             }
@@ -1057,7 +953,7 @@ nav .right #btn1{
         h4{
             font-family: BaseB;
             font-size: 1vw;
-            color: #016450;
+            color: #F1A24A;
             font-weight: 400;
             text-align: center;
         }
@@ -1118,7 +1014,7 @@ nav .right #btn1{
                 position: absolute;
                 width: 110%;
                 height: 2vh;
-                background-color: #016450;
+                background-color: #F1A24A;
                 bottom: -17%;
                 left: -8%;
                 transition: .5s ease;
@@ -1219,7 +1115,7 @@ nav .right #btn1{
 
         h4{
             font-size: 1vw;
-            color: #016450;
+            color: #F1A24A;
             font-family: BaseM;
             font-weight: 600;
             margin-bottom: 2vh;
@@ -1240,8 +1136,8 @@ nav .right #btn1{
             bottom: 0;
             padding: 1.5vh 2vw;
             font-size: 1vw;
-            background: #016450;
-            border-radius: 5px;
+            background: #F1A24A;
+            border-radius: 0px;
             border: 2px solid transparent;
             outline: none;
             transition: 1s ease;
@@ -1266,7 +1162,7 @@ nav .right #btn1{
         
         button:hover{
             border: 2px solid #FFFFFF;
-            box-shadow: 0px 0px 0px 7px rgba(19, 170, 52, 0.2);
+            box-shadow: 0px 0px 0px 7px #fccb93;
         }
 
     }
@@ -1354,7 +1250,8 @@ nav .right #btn1{
         background-color: #E3EEF1;
         border-radius: 25px;
         position: relative;
-        margin-top: 15vh;   
+        margin-top: 15vh; 
+        justify-content: left;  
 
         img{
             width: 50%;
@@ -1376,7 +1273,7 @@ nav .right #btn1{
         }
 
         h2 span{
-            color: #016450;
+            color: #F1A24A;
         }
 
         p{
@@ -1401,7 +1298,7 @@ nav .right #btn1{
             background-color: #F3F3F3;
             border-radius: 5px;
             transition: all 0.5s;
-            border: 2px solid #016450;
+            border: 2px solid #F1A24A;
             font-family: Sofia;
             font-weight: 600;
             font-size: 1vw;
@@ -1412,8 +1309,8 @@ nav .right #btn1{
     
         input:hover,
         input:focus {
-            border: 2px solid #016450;
-            box-shadow: 0px 0px 0px 7px #01645039;
+            border: 2px solid #F1A24A;
+            box-shadow: 0px 0px 0px 7px #f5c793d2;
             background-color: white;
         }
     

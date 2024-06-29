@@ -44,7 +44,7 @@ var cards = [
 ]
 
 
-function addCards(){
+function addProduct(){
     var clutter = "";
 
     cards.forEach(function(card){
@@ -54,44 +54,36 @@ function addCards(){
                 <img src="imgs/${card.image}" alt="">
             </div>
             <div class="card-info">
-                <h6 class="text-title"><i class="ri-map-pin-line"></i> ${card.name} </h6>
+                <h6 class="text-title"> ${card.name} </h6>
                 <p class="text-body">3 Bedrooms + 1 Hall + 1 Kitchen</p>
             </div>
             <div class="card-footer">
                 <span class="text-title">Rs.${card.price}/month</span>
                 <div class="card-button">
-                    <i class="ri-bookmark-line"></i>
+                    <i class="ri-add-line"></i>
                 </div>
             </div>
         </div>
     </div>`
-    })
-
-    // document.querySelector(".down").innerHTML = clutter;
-    
+    });
 }
 
-addCards();
-
+addProduct();
 
 
 
 var scrollCards = [
-    {name: "Gota-Ahmedabad", dataName: "Apartment", details: "3 Bedrooms + 1 Hall + 1 Kitchen", price: "7,999", image: "apartment1.png"},
-    {name: "Jakkur-Banglore", dataName: "Office Space", details: "3 rooms + 2 conference Hall", price: "11,999", image: "office1.png"},
-    {name: "Thaltej-Ahmedabad", dataName: "Share House", details: "2 Bedrooms + 1 Hall + 1 Kitchen", price: "6,999", image: "sharing1.png"},
-    {name: "Kirti Nagar, New Delhi", dataName: "Apartment", details: "2 Bedrooms + 1 Hall + 1 Kitchen", price: "5,499", image: "apartment2.png"},
-    {name: "Vesu-Surat", dataName: "Office Space", details: "2 rooms + 2 conference Hall", price: "7,999", image: "office2.png"},
-    {name: "Adalaj-Gandhinagar", dataName: "Full Property", details: "2 Bedrooms + 1 Hall + 1 Kitchen", price: "8,499", image: "property1.png"},
-    {name: "Vesu-Surat", dataName: "Full Property", details: "3 Bedrooms + 1 Hall + 1 Kitchen", price: "6,999", image: "property2.png"},
-    {name: "Thaltej-Ahmedabad", dataName: "Apartment", details: "2 Bedrooms + 1 Hall + 1 Kitchen", price: "5,999", image: "apartment3.png"},
-    {name: "Nirman Nagar, Jaipur", dataName: "Office Space", details: "3 rooms + 2 conference Hall", price: "7,999", image: "office3.png"},
-    {name: "Vasant Vihar, New Delhi", dataName: "Apartment", details: "3 Bedrooms + 1 Hall + 1 Kitchen", price: "6,499", image: "apartment4.png"},
-    {name: "Gota-Ahmedabad", dataName: "Share House", details: "2 Bedrooms + 1 Hall + 1 Kitchen", price: "7,499", image: "sharing2.png"},
-    {name: "Adalaj-Gandhinagar", dataName: "Full Property", details: "2 Bedrooms + 1 Hall + 1 Kitchen", price: "8,499", image: "property3.png"},
-    {name: "Vasant Vihar, New Delhi", dataName: "Office Sapce", details: "3 rooms + 2 conference Hall", price: "6,499", image: "apartment5.png"},
-    {name: "Vesu-Surat", dataName: "Full Property", details: "3 Bedrooms + 1 Hall + 1 Kitchen", price: "6,999", image: "property4.png"},
-    {name: "Nirman Nagar, Jaipur", dataName: "Office Space", details: "2 rooms + 2 conference Hall", price: "7,999", image: "office4.png"},
+    {name: "Slim Chair", dataName: "Chair", details: "Slim Comfortable Chair", price: "799", image: "slim chair.png"},
+    {name: "Sofa", dataName: "Velvet Sofa", details: "Velvet Sofa", price: "1999", image: "sofa1.png"},
+    {name: "Pendant Lamp", dataName: "Lamp", details: "Pendant Siling Lamp", price: "1999", image: "pendant lamp.png"},
+    {name: "Arm Chair", dataName: "Chair", details: "Arm Comfortable Chair", price: "799", image: "Arm Chair.png"},
+    {name: "Sofa", dataName: "Velvet Sofa", details: "Velvet Sofa", price: "1999", image: "sofa2.png"},
+    {name: "Coffee Chair", dataName: "Chair", details: "Coffee Comfortable Chair", price: "799", image: "coffee chair.png"},
+    {name: "Sofa Chair", dataName: "Velvet Sofa", details: "Comfortable Sofa Chair", price: "1999", image: "sofachair1.png"},
+    {name: "Modern Chair", dataName: "Chair", details: "Modern Comfortable Chair", price: "799", image: "chair2.png"},
+    {name: "Stone Lamp", dataName: "Lamp", details: "Stone Shape Lamp", price: "1999", image: "stone lamp.png"},
+    
+    
 ]
 
 
@@ -106,13 +98,13 @@ function addScrollCards(){
                     <img src="imgs/${card.image}" alt="">
                 </div>
                 <div class="card-info">
-                    <h6 class="text-title"><i class="ri-map-pin-line"></i> ${card.name} </h6>
+                    <h6 class="text-title">${card.name} </h6>
                     <p class="text-body">${card.details}</p>
                 </div>
                 <div class="card-footer">
-                    <span class="text-title">₹${card.price}/month</span>
+                    <span class="text-title">$ ${card.price}</span>
                     <div class="card-button">
-                        <i class="ri-bookmark-line"></i>
+                        <i class="ri-add-circle-fill"></i>
                     </div>
                 </div>
             </div>
@@ -126,6 +118,25 @@ function addScrollCards(){
 
 addScrollCards()
 
+
+
+
+const filterButtons = document.querySelectorAll(".page6>.down #filter-buttons button");
+const filterableCards = document.querySelectorAll(".page6>.down .box");
+
+
+const filterCards = (e) => {
+    document.querySelector(".page6>.down #filter-buttons .active").classList.remove("active");
+    e.target.classList.add("active");
+
+    filterableCards.forEach(card => {
+        card.classList.add("hide"); 
+
+        if(card.dataset.name === e.target.dataset.filter || e.target.dataset.filter === "all") {
+            return card.classList.remove("hide");
+        }
+    });
+}
 
 
 
@@ -177,49 +188,31 @@ function searchPrice() {
     }
 }
 
-function searchRoom() {
-    let filter = document.getElementById('room').value.toUpperCase();
+// function searchRoom() {
+//     let filter = document.getElementById('room').value.toUpperCase();
 
-    let item = document.querySelectorAll('.box');
+//     let item = document.querySelectorAll('.box');
 
-    let l = document.getElementsByTagName('p');
+//     let l = document.getElementsByTagName('p');
 
-    for(var i = 0;i<=l.length;i++){
-        let a=item[i].getElementsByTagName('p')[0];
+//     for(var i = 0;i<=l.length;i++){
+//         let a=item[i].getElementsByTagName('p')[0];
 
-        let value=a.innerHTML || a.innerText || a.textContent;
+//         let value=a.innerHTML || a.innerText || a.textContent;
 
-        if(value.toUpperCase().indexOf(filter) > -1) {
-            item[i].style.display="";
-        }
-        else
-        {
-            item[i].style.display="none";
-        }
-    }
-}
-
-
+//         if(value.toUpperCase().indexOf(filter) > -1) {
+//             item[i].style.display="";
+//         }
+//         else
+//         {
+//             item[i].style.display="none";
+//         }
+//     }
+// }
 
 
 
 
-const filterButtons = document.querySelectorAll(".page2>.up #filter-buttons button");
-const filterableCards = document.querySelectorAll(".page2>.down .box");
-
-
-const filterCards = (e) => {
-    document.querySelector(".page2>.up #filter-buttons .active").classList.remove("active");
-    e.target.classList.add("active");
-
-    filterableCards.forEach(card => {
-        card.classList.add("hide"); 
-
-        if(card.dataset.name === e.target.dataset.filter || e.target.dataset.filter === "all") {
-            return card.classList.remove("hide");
-        }
-    });
-}
 
 
 filterButtons.forEach(button => button.addEventListener("click", filterCards));
@@ -262,12 +255,13 @@ cardButton.forEach(button => button.addEventListener("click",  function() {
 var swiper = new Swiper(".mySwiper", {
     slidesPerView: 3.5,
     spaceBetween: 15,
+    grab: true,
     pagination: {
       el: ".swiper-pagination",
       clickable: true,
     },
     autoplay: {
-        delay: 7000,
+        delay: 3000,
         disableOnInteraction: true
       },
   });
@@ -301,18 +295,19 @@ tl.from("nav .logo, nav .menu, nav .right",{
     stagger: .2
 },"anime")
 
-tl.from(".hero .container",{
-    scale: .8,
-    opacity: 0,
-    duration: 1
-},"anime")
-
 tl.from(".hero .container h1, .hero .container p",{
     y: 100,
     opacity: 0,
     duration: 1,
     delay: -.9
-})
+},"anime")
+tl.from(".hero .container",{
+    scale: .7,
+    opacity: 0,
+    duration: 1,
+    delay: -1
+},"anime")
+
 
 tl.from(".page2 .up h2, .page2 .up p",{
     x: 100,
