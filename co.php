@@ -1,9 +1,9 @@
 <?php
 $server ="localhost";
 $username ="root";
-$password ="Abhi@8820";
+$password ="";
 $dbname="rentalhub";
-// $port = 3307;
+$port = 3307;
 $conn = mysqli_connect($server,$username,$password,$dbname,$port);
 if($conn){
     // echo "connection establish"  ;

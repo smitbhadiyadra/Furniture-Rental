@@ -180,9 +180,8 @@ if (isset($_POST['update'])) {
 
         <div class="page1">
             <nav>
-                <div class="logo">
-                    <i class="ri-home-heart-line"></i>
-                    Rental <span>Hub</span>
+            <div class="logo">
+                    <img src="imgs/furniture.png" style="width: 60px;" alt="">
                 </div>
                 <div class="menu">
                     <a href="logged_users.php">User</a>
@@ -191,9 +190,9 @@ if (isset($_POST['update'])) {
                 </div>
                 <div class="right">
                     <h4 style="font-size: 1.1vw; line-height: 1; text-align: right; letter-spacing: 1px; text-transform:uppercase">
-                        <?php echo $row['FirstName'] ?>
+                        ADMIN
                     </h4>
-                    <button id="btn1"></button>
+                    <!-- <button id="btn1"></button> -->
                     <button type="submit" name="logout" id="logout" style="cursor: pointer;
                     padding: 1.5vh 1.2vw;
                     border-radius: 10px;
@@ -221,13 +220,13 @@ if (isset($_POST['update'])) {
                             <span>Upload Details</span>
                         </div>
                         <div class="titles">
-                            <span>City:</span>
+                            <span>Product Name:</span>
                         </div>
                         <div class="inputs">
-                            <input required type="text" name="title" placeholder="City..." value="<?php echo $card['title']; ?>">
+                            <input required type="text" name="title" placeholder="Product Name..." value="<?php echo $card['title']; ?>">
                         </div>
                         <div class="titles">
-                            <span>Property Description:</span>
+                            <span>Description:</span>
                         </div>
                         <div class="inputs">
                             <input required type="text" placeholder="Description..." name="description" value="<?php echo $card['description']; ?>">

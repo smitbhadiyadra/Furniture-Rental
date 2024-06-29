@@ -59,7 +59,7 @@ error_reporting(0);
       <div class="row">
     <div class="col-md-12">
       <form action="index.php" method="post">
-        <h1> Check Out Form</h1>
+        <h1>Your Profile</h1>
         
         <fieldset>
                   
@@ -89,7 +89,7 @@ error_reporting(0);
         <button type="submit" name="submit">Save</button>
         
        </form>
-        </div>
+       </div>
       </div>
       
     </body>

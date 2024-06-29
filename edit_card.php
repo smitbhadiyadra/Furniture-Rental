@@ -217,9 +217,8 @@ if (isset($_POST['update'])) {
 
         <div class="page1">
             <nav>
-                <div class="logo">
-                    <i class="ri-home-heart-line"></i>
-                    Rental <span>Hub</span>
+            <div class="logo">
+                    <img src="imgs/furniture.png" style="width: 60px;" alt="">
                 </div>
                 <div class="menu">
                     <a href="index.php">Home</a>
@@ -258,7 +257,7 @@ if (isset($_POST['update'])) {
                             <span>Update Details</span>
                         </div>
                         <div class="titles">
-                            <span>Title:</span>
+                            <span>Product Name:</span>
                         </div>
                         <div class="inputs">
                             <input type="text" name="title" placeholder="Title..." value="<?php echo $card['title']; ?>">

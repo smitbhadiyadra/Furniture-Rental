@@ -318,8 +318,7 @@ error_reporting(0);
         <div class="page1">
         <nav>
                 <div class="logo">
-                    <i class="ri-home-heart-line"></i>
-                    Rental <span>Hub</span>
+                    <img src="imgs/furniture.png" style="width: 60px;" alt="">
                 </div>
                 <div class="menu">
                     <a href="logged_users.php">Users</a>
@@ -329,9 +328,9 @@ error_reporting(0);
                 </div>
                 <div class="right">
                     <h4 style="font-size: 1.1vw; line-height: 1; text-align: right; letter-spacing: 1px; text-transform:uppercase">
-                        <?php echo $row['FirstName']; ?>
+                        ADMIN
                     </h4>
-                    <button id="btn1"></button>
+                    <!-- <button id="btn1"></button> -->
                     <button type="submit" name="logout" id="logout" style="cursor: pointer;
                     padding: 1.5vh 1.2vw;
                     border-radius: 10px;
@@ -358,9 +357,9 @@ error_reporting(0);
                     <table class="table">
                         <thead class="thead">
                             <tr class="tableRow">
-                                <th>City</th>
+                                <th>Product Name</th>
                                 <th>Description</th>
-                                <th>Rent in (₹)</th>
+                                <th>Price ($)</th>
                                 <th>Action</th>
                             </tr>
                         </thead>
@@ -369,7 +368,7 @@ error_reporting(0);
                             <tr>
                                 <td><?php echo $card['title']; ?></td>
                                 <td><?php echo $card['description']; ?></td>
-                                <td><?php echo $card['price']; ?>/~</td>
+                                <td><?php echo $card['price']; ?></td>
                                 <td ><button class="editButton"><a href="edit_card.php?id=<?php echo $card['id']; ?>">Edit</a></button>
                             </tr>
                         <?php endforeach; ?>

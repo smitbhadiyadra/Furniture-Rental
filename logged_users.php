@@ -318,10 +318,9 @@ if (!empty($_SESSION["id"])) {
     <!-- <div class="page1"> -->
 
     <nav>
-        <div class="logo">
-            <i class="ri-home-heart-line"></i>
-            Rental <span>Hub</span>
-        </div>
+    <div class="logo">
+                    <img src="imgs/furniture.png" style="width: 60px;" alt="">
+                </div>
         <div class="menu">
             <a href="logged_users.php" id="active">Users</a>
             <a href="card_list.php">Products</a>
@@ -330,9 +329,9 @@ if (!empty($_SESSION["id"])) {
         </div>
         <div class="right">
             <h4 style="font-size: 1.1vw; line-height: 1; text-align: right; letter-spacing: 1px; text-transform:uppercase">
-                <?php echo $row['FirstName']; ?>
+                admin
             </h4>
-            <button id="btn1"></button>
+            <!-- <button id="btn1"></button> -->
             <button type="submit" name="logout" id="logout" style="cursor: pointer;
                     padding: 1.5vh 1.2vw;
                     border-radius: 10px;

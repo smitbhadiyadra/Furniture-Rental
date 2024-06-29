@@ -23,12 +23,12 @@
 
 		<div class="main">
 			<div class="left">
-				<div class="logo">
+			<div class="logo">
                     <i class="ri-home-heart-line"></i>
-                    Rental <span>Hub</span>
+                    Furniture <span>Rental</span>
                 </div>
 				<div class="overlay"></div>
-				<h1>The Best Place to <br>Rent and Buy <span>Properties</span></h1>
+				<h1>The Best Place to <br>Rent and Buy <span>Furniture</span></h1>
 			</div>
 			<section class="container forms">
 				<div class="form login">
@@ -56,7 +56,9 @@
 						</form>
 	
 						<div class="form-link">
-							<span>Don't have an account? <a href="#" class="link signup-link">Signup</a></span>
+							<span>Don't have an account? <a href="#" class="link signup-link">Signup</a></span> <br>
+							<span>are you a Admin? <a href="isadmin.php" >Signup</a></span>
+
 						</div>
 					</div>
 	
