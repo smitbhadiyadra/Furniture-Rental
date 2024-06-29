@@ -2,11 +2,11 @@
     session_start();
     $servername = "localhost";
     $username = "root";
-    $password = "";
+    $password = "Abhi@8820";
     $dbname = "rentalhub";
-    $port = 3307;
+    // $port = 3307;
 
-    $conn = mysqli_connect( $servername, $username, $password, $dbname , $port );
+    $conn = mysqli_connect( $servername, $username, $password, $dbname );
 
     if($conn){
         // echo "Connection Success";

@@ -474,6 +474,8 @@ error_reporting(0);
                     <a href="#">Products</a>
                     <a href="#">Sales</a>
                     <a href="#">Contact</a>
+                    <!-- <a href="card_list.php">Listed</a> -->
+                    <!-- <a href="insert_card.php">Upload</a> -->
                 </div>
                 <div class="right">
                     <h4 style="font-size: 1.1vw; line-height: 1; text-align: right; letter-spacing: 1px; text-transform:uppercase">
