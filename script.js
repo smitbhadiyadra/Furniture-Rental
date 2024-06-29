@@ -67,11 +67,12 @@ function addCards(){
     </div>`
     })
 
-    document.querySelector(".down").innerHTML = clutter;
+    // document.querySelector(".down").innerHTML = clutter;
     
 }
 
-addCards()
+addCards();
+
 
 
 

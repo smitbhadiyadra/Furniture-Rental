@@ -142,26 +142,35 @@ nav .right{
 }
 
 nav .right #btn1{
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    background-image: url("imgs/profileImg2.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     border: 2px solid #016450;
+    cursor: pointer;
     background-color: transparent;
-    padding: 1.5vh 1.5vw;
-    border-radius: 6px;
     transition: all cubic-bezier(0.19, 1, 0.22, 1).7s;
 }
 
-nav .right #btn1 a{
-    text-decoration: none;
-    color: #016450;
-    font-size: 1vw;
+.right #logout{
+    cursor: pointer;
+    padding: 1.5vh 1.2vw;
+    border-radius: 33px;
+    background: #FFFFFF;
+    border: 2px solid #FFFFFF;
+    font-family: Sofia;
     font-weight: 600;
-    transition: all cubic-bezier(0.19, 1, 0.22, 1).7s;
+    transition: .5s ease;
+    font-size: 1vw;
+    box-shadow: 0px 0px 10px 2px #d3d3d3;
 }
 
-nav .right #btn1:hover{
-    background-color: #016450;
-}
-
-nav .right #btn1:hover a{
+.right #logout:hover{
+    background: #016450;
+    box-shadow: 0px 0px 0px 7px rgba(19, 170, 52, 0.2);
     color: #fff;
 }
 
@@ -400,7 +409,7 @@ nav .right #btn1:hover a{
     .card {
         justify-self: center;
         width: 270px;
-        height: 370px;
+        height: 400px;
         padding: .8em;
         background: #f5f5f5;
         position: relative;
